@@ -10,7 +10,7 @@ function createWindow() {
     controlPanel: fileUrl(`${__dirname}/renderer/control.html`),
     startPage: 'https://google.com',
     blankTitle: 'New tab',
-    debug: false // will open controlPanel's devtools
+    debug: false // if its true will open controlPanel's devtools
   });
 
   browser.on('closed', () => {

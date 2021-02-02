@@ -2,9 +2,8 @@ const { ipcRenderer } = require('electron');
 
 // Used in Renderer process
 
-/**
- * Tell browser view to load url
- */
+ // Tell browser view to load url
+
 const sendEnterURL = url => ipcRenderer.send('url-enter', url);
 
 /**

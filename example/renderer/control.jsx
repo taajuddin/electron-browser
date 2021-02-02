@@ -48,6 +48,7 @@ const IconPlus = () => (
   </svg>
 );
 
+
 const IconReload = () => (
   <svg
     viewBox="64 64 896 896"
@@ -97,6 +98,7 @@ function Control() {
 
   const onUrlChange = e => {
     // Sync to tab config
+
     const v = e.target.value;
     action.sendChangeURL(v);
   };

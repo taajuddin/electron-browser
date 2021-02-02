@@ -44,6 +44,7 @@ class BrowserLikeWindow extends EventEmitter {
     });
 
     // BrowserView should add to window before setup
+
     this.win.addBrowserView(this.controlView);
     this.controlView.setBounds(this.getControlBounds());
     this.controlView.setAutoResize({ width: true });

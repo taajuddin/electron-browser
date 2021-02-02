@@ -5,10 +5,9 @@ const { useEffect, useState } = require('react');
 
 const noop = () => {};
 
-/**
- * A custom hook to create ipc connection between BrowserView and ControlView
- *
-  */
+
+ // A custom hook to create ipc connection between BrowserView and ControlView
+
 module.exports = function useConnect(options = {}) {
   const { onTabsUpdate = noop, onTabActive = noop } = options;
   const [tabs, setTabs] = useState({});
